@@ -28,3 +28,6 @@
 .ex-5-square:hover{
     transform: scale(2);
 }
+.ex-6-img:hover{
+    filter: grayscale(1);
+}
