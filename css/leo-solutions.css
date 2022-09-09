@@ -28,6 +28,9 @@
 .ex-5-square:hover{
     transform: scale(2);
 }
+.ex-5-square:active{
+    transform: scale(0.5);
+}
 .ex-6-img:hover{
     filter: grayscale(1);
 }
@@ -51,4 +54,36 @@
     border-radius: 20px;
     transform: scale(1.5);
     filter: sepia(0.7);
+}
+@keyframes rotation-10 {
+    from{transform: rotate(3600deg);}
+    to{transform: rotate(0deg);}
+}
+.ex-10-icon{
+    animation: rotation-10 10s linear infinite;
+}
+@keyframes rotation-11 {
+    0%{transform: rotate(0deg);}
+    90%{transform: rotate(270deg);}
+    100%{transform: rotate(0deg);}
+}
+.ex-11-icon:hover{
+    animation: rotation-11 3s linear;
+}
+
+@keyframes translate-top-12 {
+    0%{left:10%;}
+    50%{left:calc(100% - 60px);}
+    100%{left:10%;}
+}
+.ex-12-button:hover .ex-12-top-white{
+    animation: translate-top-12 2s linear;
+}
+@keyframes translate-bottom-12 {
+    0%{right:10%;}
+    50%{right:calc(100% - 60px);}
+    100%{right:10%;}
+}
+.ex-12-button:hover .ex-12-bottom-white{
+    animation: translate-bottom-12 2s linear;
 }
