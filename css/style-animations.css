@@ -37,3 +37,10 @@
 .ex-7-img:hover{
     filter: sepia(0.7);
 }
+.ex-8-img{
+    transition: all 2s;
+}
+.ex-8-img:hover{
+    filter: sepia(0.8);
+    border-radius: 20px;
+}
